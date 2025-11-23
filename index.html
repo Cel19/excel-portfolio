@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Excel — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topnav" id="topnav">
+  <a class="logo" href="#home">Excel</a>
+  <nav class="navlinks" id="navlinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="themeToggle" aria-label="Toggle theme">☾</button>
+  <button id="menuBtn" class="menu-btn" aria-label="Menu">≡</button>
+</header>
+
+<main>
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <h1>Hi — I'm <span class="name">Excel Enzo T. Lirio</span></h1>
+      <p class="tagline">Graphic designer & front-end developer crafting visually engaging and interactive digital experiences.</p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#projects">View Work</a>
+        <a class="btn ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="blob">
+        <g transform="translate(300,300)">
+          <path d="M120,-158C158,-127,197,-84,206,-33C216,19,197,77,164,114C130,151,82,168,33,179C-16,190,-65,195,-97,171C-129,147,-144,95,-160,44C-176,-6,-194,-57,-178,-99C-162,-140,-112,-172,-62,-188C-12,-203,38,-202,86,-187C134,-172,82,-189,120,-158Z" />
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="about" class="section card">
+    <h2>About</h2>
+    <div class="grid-2">
+      <div>
+        <p>I’m a graphic designer and front-end developer passionate about creating visually stunning and functional digital experiences. I enjoy turning ideas into interactive websites while delivering compelling visuals through branding, posters, and digital illustrations.</p>
+
+        <ul class="meta">
+          <li><strong>Location:</strong> City of Calamba</li>
+          <li><strong>Role:</strong> Graphic Designer & Front-end Developer</li>
+          <li><strong>Tools:</strong> Figma, Photoshop, Illustrator, Canva, HTML/CSS, JavaScript</li>
+          <li><strong>Education:</strong> Bachelor of Science in Information Technology, City College of Calamba</li>
+         </ul>
+
+        <a class="btn" href="#projects">See projects</a>
+      </div>
+
+      <div class="profile">
+        <img src="assets/me.png" alt="Photo of Excel Enzo T. Lirio" class="profile-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section card">
+    <h2>Certificates</h2>
+    <p class="muted">A collection of certifications I’ve earned.</p>
+
+    <div class="cert-grid">
+      <div class="cert">
+        <img src="assets/cert1.jpg" alt="Certificate 1" class="cert-img">
+        <p class="small muted">Design Thinking for Beginners</p>
+      </div>
+
+      <div class="cert">
+        <img src="assets/cert2.jpg" alt="Certificate 2" class="cert-img">
+        <p class="small muted">Certificate Title</p>
+      </div>
+    </div>
+  </section>
+  
+  <div id="projImgModal" class="cert-modal" aria-hidden="true">
+    <div class="cert-modal-content" style="position:relative;"> 
+      <button id="projImgModalClose" class="cert-modal-close">✕</button>
+      <button id="projPrevBtn" class="modal-nav-btn modal-prev">❮</button>
+      <button id="projNextBtn" class="modal-nav-btn modal-next">❯</button>
+      <img id="projImgModalImg" src="" alt="Project Image">
+    </div>
+  </div>
+
+ <section id="projects" class="section card">
+  <h2>Projects</h2>
+  <p class="muted">A selection of recent works.</p>
+  
+  <div class="projects-slider">
+    <div class="slider-track">
+    
+      <div class="slide">
+        <article class="project" data-images="assets/project1.jpg">
+          <img src="assets/project1.jpg" alt="Project 1">
+          <div class="project-info">
+             <h3>Fruitful Design</h3>
+             <p>Principles of Design</p>
+          </div>
+        </article>
+      </div>
+      
+      <div class="slide">
+        <article class="project multi-image" data-images="assets/project2.jpg, assets/project2-1.jpg, assets/project2-2.jpg, assets/project2-3.jpg, assets/project2-4.jpg ">
+          <img src="assets/project2.jpg" alt="Brew Haven"> 
+           <div class="project-info">
+             <h3>Brew Haven</h3>
+             <p>Digital Marketing Graphics</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="slide">
+        <article class="project multi-image" data-images="assets/project3.jpg, assets/project3-1.jpg, assets/project3-2.jpg,assets/project3-3.jpg">
+          <img src="assets/project3.jpg" alt="brcafe"> 
+           <div class="project-info">
+             <h3>BR Cafe POS and Inventory</h3>
+             <p>Capstone Project</p>
+          </div>
+        </article>
+      </div>
+      
+      </div> 
+  </div> 
+</section>
+
+  <section id="skills" class="section card">
+    <h2>Skills</h2>
+    <div class="skill-row">
+      <div class="skill">
+        <h4>Design</h4>
+        <p class="muted small">Branding, posters, layouts</p>
+      </div>
+
+      <div class="skill">
+        <h4>Tools</h4>
+        <p class="muted small">Figma, Photoshop, Illustrator</p>
+      </div>
+
+      <div class="skill">
+        <h4>Front-end</h4>
+        <p class="muted small">HTML, CSS, JS — prototyping</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section card">
+    <h2>Contact</h2>
+
+    <div class="grid-2">
+      <form id="contactForm" class="form" action="mailto:etlirio@ccc.edu.ph" method="post" enctype="text/plain">
+        <label><span>Name</span><input type="text" name="name" required></label>
+        <label><span>Email</span><input type="email" name="email" required></label>
+        <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="reset" class="btn ghost">Clear</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <h3>Quick links</h3>
+        <ul class="social-icons">
+          <li>
+            <a href="mailto:etlirio@ccc.edu.ph?subject=Project%20Inquiry">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 4h16v16H4z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="22,6 12,13 2,6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/xclnz_lirio/" target="_blank" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" stroke-width="2"/>
+                <line x1="17" y1="7" x2="17" y2="7" stroke-width="2"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/lirio.enzo" target="_blank" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" stroke-width="2"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Excel Enzo T. Lirio. All rights reserved.</p>
+</footer>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true">
+    <button id="modalClose" class="modal-close">✕</button>
+    <h3 id="modalTitle">Project Title</h3>
+    <p id="modalDesc">Project details go here.</p>
+  </div>
+</div>
+
+<div id="certModal" class="cert-modal" aria-hidden="true">
+  <div class="cert-modal-content">
+    <button id="certModalClose" class="cert-modal-close">✕</button>
+    <img id="certModalImg" src="" alt="Certificate">
+    <p id="certModalTitle" class="muted small"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
